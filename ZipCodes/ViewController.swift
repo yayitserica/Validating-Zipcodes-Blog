@@ -36,7 +36,8 @@ class ViewController: UIViewController {
             if let enteredZip = Int(textFieldZip) {
                 //12 -
                 if isValid(enteredZip) {
-                    responseLabel.text = "Valid zipcode!"
+                    responseLabel.text = "\(enteredZip) is a valid zipcode!"
+                    textField.text = ""
                 } else {
                     responseLabel.text = "Try another zipcode."
                     textField.text = ""
